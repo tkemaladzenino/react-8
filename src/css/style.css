@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.table-container {
+
+    width: 60%;
+    margin: 50px auto;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table,
+th,
+td {
+    border: 2px solid #0d7417;
+}
+
+th {
+    background-color: #fdfd9c;
+    text-align: left;
+    padding: 20px;
+    color: green;
+    font-size: 24px;
+}
+
+td {
+    text-align: left;
+    padding: 6px;
+}
