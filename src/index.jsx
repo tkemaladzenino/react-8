@@ -8,7 +8,10 @@ function App() {
 
     const increaseNumber = () => {
         setNumber(number + 1);
-        window.alert('გვერდზე დაფიქსირდა განახლება');
+        setTimeout(() => {
+            window.alert('The page has been updated');
+        }, 1);
+
     };
 
     useEffect(() => {
