@@ -9,7 +9,7 @@ function App() {
     const increaseNumber = () => {
         setNumber(number + 1);
         setTimeout(() => {
-            window.alert('The page has been updated');
+            window.alert('გვერდზე დაფიქსირდა განახლება');
         }, 1);
 
     };
@@ -37,9 +37,9 @@ function App() {
 
     return (
         <div className="App">
-            <p>რიცხვი: {number}</p>
-            <button onClick={increaseNumber}>დააკლიკე რიცხვის ერთით გასაზრდელად</button>
-        </div>
+            <p style={{ color: 'red' }}>რიცხვი: {number}</p>
+            <button style={{ color: 'green', border: '4px solid green', backgroundColor: 'yellow', borderRadius: '10px', height: '40px' }} onClick={increaseNumber}>დააკლიკე რიცხვის ერთით გასაზრდელად</button>
+        </div >
     );
 
 }
