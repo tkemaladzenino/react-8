@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 
 function App() {
     const [pageLoaded, setPageLoaded] = useState(false);
+    const [number, setNumber] = useState(0);
+
+
+    const increaseNumber = () => {
+        setNumber(number + 1);
+        window.alert('გვერდზე დაფიქსირდა განახლება');
+    };
 
     useEffect(() => {
         if (!pageLoaded) {
@@ -24,6 +31,13 @@ function App() {
             window.removeEventListener('beforeunload', unloadHandler);
         };
     }, [pageLoaded]);
+
+    return (
+        <div className="App">
+            <p>რიცხვი: {number}</p>
+            <button onClick={increaseNumber}>დააკლიკე რიცხვის ერთით გასაზრდელად</button>
+        </div>
+    );
 
 }
 
